@@ -1,4 +1,7 @@
 language: objective-c
 osx_image: xcode8.3
 script:
-  - sysctl -n hw.ncpu
+  - xcrun simctl list
+  - uname -a
+  - sysctl hw.ncpu
+  - sysctl hw.memsize
